@@ -160,3 +160,8 @@ cython_debug/
 #.idea/
 .python-version
 *.pt
+images/
+good_images/
+*.png
+*.jpg
+*.mp4
