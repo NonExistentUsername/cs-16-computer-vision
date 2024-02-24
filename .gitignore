@@ -167,3 +167,4 @@ good_images/
 *.mp4
 annotations_yolo1/
 annotations_coco/
+.DS_Store
