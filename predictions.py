@@ -1,6 +1,6 @@
 from ultralytics import YOLO  # type: ignore
 
-model = YOLO("yolov8n.pt")
+model = YOLO("yolov8n_trained.pt")
 
 
 def predict(img):
