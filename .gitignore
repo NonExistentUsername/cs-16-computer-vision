@@ -168,3 +168,4 @@ good_images/
 annotations_yolo/
 annotations_coco/
 .DS_Store
+datasets/
