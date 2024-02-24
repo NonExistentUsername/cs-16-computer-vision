@@ -165,3 +165,5 @@ good_images/
 *.png
 *.jpg
 *.mp4
+annotations_yolo1/
+annotations_coco/
