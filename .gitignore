@@ -165,6 +165,6 @@ good_images/
 *.png
 *.jpg
 *.mp4
-annotations_yolo1/
+annotations_yolo/
 annotations_coco/
 .DS_Store
