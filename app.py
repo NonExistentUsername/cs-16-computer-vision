@@ -7,7 +7,7 @@ from mss import mss
 
 from predictions import model, predict
 
-bounding_box = {"top": 200, "left": 0, "width": 640, "height": 640}
+bounding_box = {"top": 60, "left": 0, "width": 1280, "height": 1280}
 
 sct = mss()
 
@@ -49,7 +49,9 @@ img_predictions = None
 def draw():
     global img_predictions
     sct_img = sct.grab(bounding_box)
-    sct_img = cv2.cvtColor(np.array(sct_img), cv2.COLOR_BGR2RGB)
+    sct_img = np.array(sct_img)
+    sct_img = cv2.resize(sct_img, (640, 640))
+    sct_img = cv2.cvtColor(sct_img, cv2.COLOR_BGR2RGB)
     img_predictions = predict(sct_img)
     draw_predictions(sct_img, img_predictions)
     cv2.imshow("screen", cv2.cvtColor(sct_img, cv2.COLOR_RGB2BGR))
