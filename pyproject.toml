@@ -11,6 +11,9 @@ pillow = "^10.2.0"
 opencv-python = "^4.9.0.80"
 mss = "^9.0.1"
 ultralytics = "^8.1.18"
+mouse = "^0.7.1"
+pyautogui = "^0.9.54"
+keyboard = "^0.13.5"
 
 
 [tool.poetry.group.dev.dependencies]
