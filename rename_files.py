@@ -1,6 +1,6 @@
 import os
 
-path = "/Users/dmytro/Desktop/ai-aimbot/good_images2"
+path = ""
 files = os.listdir(path)
 
 
