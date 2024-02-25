@@ -1,7 +1,7 @@
 from ultralytics import YOLO  # type: ignore
 
 # Load a model
-model = YOLO("yolov8m.pt")  # load a pretrained model (recommended for training)
+model = YOLO("yolov8n.pt")  # load a pretrained model (recommended for training)
 # model = YOLO("last.pt")  # load a custom trained model
 
 # Train the model
