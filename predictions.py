@@ -1,7 +1,7 @@
 from ultralytics import YOLO  # type: ignore
 
-model = YOLO("yolov8n_trained.pt")
+model = YOLO("best.pt")
 
 
 def predict(img):
-    return model(img, device="mps")[0]
+    return model(img, device="mps", verbose=False)[0]
