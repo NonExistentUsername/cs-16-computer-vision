@@ -1,7 +1,8 @@
 from ultralytics import YOLO  # type: ignore
 
 # Load a model
-model = YOLO("yolov8n_trained.pt")  # load a pretrained model (recommended for training)
+model = YOLO("yolov8m.pt")  # load a pretrained model (recommended for training)
+# model = YOLO("last.pt")  # load a custom trained model
 
 # Train the model
 results = model.train(
@@ -10,6 +11,8 @@ results = model.train(
     imgsz=640,
     device="mps",
 )
+# results = model.train(resume=True)
+
 
 try:
     # Evaluate the model
@@ -19,4 +22,4 @@ except Exception as e:
 
 
 # Save the model
-model.save("yolov8n_trained_v2.pt")
+model.save("yolov8n_trained.pt")
