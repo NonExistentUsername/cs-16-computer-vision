@@ -7,8 +7,8 @@ model = YOLO("yolov8n.pt")  # load a pretrained model (recommended for training)
 # Train the model
 results = model.train(
     data="./datasets/data.yaml",
-    epochs=24,
-    imgsz=640,
+    epochs=4,
+    imgsz=1024,
     device="mps",
 )
 # results = model.train(resume=True)
